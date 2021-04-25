@@ -8,7 +8,7 @@ APIs Rest do aplicativo Cesta.
 - [/produtos](#/produtos)
 
 ## Estrutura
-![Estrutura](docs/API_cesta_ideia)
+![Estrutura](docs/API_cesta_ideia.png)
 
 ## /mercados
 API de informação sobre mercados para consumidores.
