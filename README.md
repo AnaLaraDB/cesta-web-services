@@ -13,14 +13,22 @@ APIs Rest do aplicativo Cesta.
 ## /mercados
 API de informação sobre mercados para consumidores.
 
-### Requisição
+### [GET]
+#### Requisição
+```
+Querystring: 
+ - latitude : numérico
+ - longitude: numério
 ```
 
+#### Respostas
 ```
-
-### Respostas
-```
-
+{
+mercados: [ 
+  {"nome": "MERCADINHO DA ESQUINA", "distancia": 0.2, "avaliacao": 5},
+  {"nome": "MERCADINHO DO BAIRRO", "distancia": 1.5, "avaliacao": 4.5}
+  ]
+}
 ```
 
 ## /produtos
