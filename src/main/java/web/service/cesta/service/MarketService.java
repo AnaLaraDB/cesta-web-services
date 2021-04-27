@@ -18,7 +18,7 @@ public class MarketService {
 //        return null;
 //    }
 
-    public MarketDto createMarket(Market market) {
+    public MarketDto create(Market market) {
         Market newMarket = marketRepository.save(market);
         return new MarketDto(newMarket);
     }
