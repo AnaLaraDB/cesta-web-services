@@ -1,9 +1,11 @@
 package web.service.cesta.model;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+@Entity
 public class ProductMarket { //a market has list of many productMarkets
     @Id
     long id;

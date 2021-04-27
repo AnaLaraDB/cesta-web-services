@@ -1,12 +1,14 @@
 package web.service.cesta.dto;
 
+import web.service.cesta.model.Product;
+
 public class ProductDto {
     private String name;
     private long valor;
 
-    public ProductDto(String name, long valor) {
-        this.name = name;
-        this.valor = valor;
+    public ProductDto(Product product) {
+        this.name = product.getNameProduct();
+//        this.valor = product.;
     }
 
     public String getName() {

@@ -8,8 +8,6 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @ManyToOne
-    private Set<ProductMarket> productMarket;
     private String nameProduct;
 
     public Product() {
@@ -20,4 +18,19 @@ public class Product {
         this.nameProduct = nameProduct;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getNameProduct() {
+        return nameProduct;
+    }
+
+    public void setNameProduct(String nameProduct) {
+        this.nameProduct = nameProduct;
+    }
 }
