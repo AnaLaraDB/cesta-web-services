@@ -12,7 +12,7 @@ import web.service.cesta.model.Market;
 import web.service.cesta.service.MarketService;
 
 @RestController
-@RequestMapping("api/market")
+@RequestMapping("/mercado")
 public class MarketController {
 
     @Autowired
