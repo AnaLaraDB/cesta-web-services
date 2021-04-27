@@ -1,10 +1,10 @@
 package web.service.cesta.dto;
 
-public class Product {
+public class ProductDto {
     private String name;
     private long valor;
 
-    public Product(String name, long valor) {
+    public ProductDto(String name, long valor) {
         this.name = name;
         this.valor = valor;
     }

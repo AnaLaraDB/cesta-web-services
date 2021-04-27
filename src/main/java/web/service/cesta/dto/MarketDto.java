@@ -1,19 +1,21 @@
 package web.service.cesta.dto;
 
+import web.service.cesta.model.Market;
+
 import java.util.Set;
 
-public class Market {
+public class MarketDto {
     private String nameMarket;
-    private Set<Product> products;
+    private Set<ProductDto> productDtos;
     private long longitude;
     private long latitude;
 
-    public Market(String nameMarket, Set<Product> products, long longitude, long latitude) {
+    public MarketDto(Market market) {
         this.nameMarket = nameMarket;
-        this.products = products;
         this.longitude = longitude;
         this.latitude = latitude;
     }
+
 
     public String getNameMarket() {
         return nameMarket;
@@ -23,12 +25,12 @@ public class Market {
         this.nameMarket = nameMarket;
     }
 
-    public Set<Product> getProducts() {
-        return products;
+    public Set<ProductDto> getProducts() {
+        return productDtos;
     }
 
-    public void setProducts(Set<Product> products) {
-        this.products = products;
+    public void setProducts(Set<ProductDto> productDtos) {
+        this.productDtos = productDtos;
     }
 
     public long getLongitude() {
