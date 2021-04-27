@@ -34,12 +34,21 @@ mercados: [
 ## /produtos
 API de informação sobre produtos para consumidores.
 
-### Requisição
+### [GET]
+#### Requisição
+```
+Querystring: 
+ - latitude : numérico
+ - longitude: numério
+ - produto: alfanumérico
 ```
 
+#### Respostas
 ```
-
-### Respostas
-```
-
+{
+produtos: [
+  {"nome": "Arroz Marca Y 1kg", "preco": 4.50, "mercado": "MERCADINHO DO BAIRRO", "distancia": 1.5},
+  {"nome": "Arroz Marca X 1kg", "preco": 5.00, "mercado": "MERCADINHO DA ESQUINA", "distancia": 0.2}
+  ]
+}
 ```
