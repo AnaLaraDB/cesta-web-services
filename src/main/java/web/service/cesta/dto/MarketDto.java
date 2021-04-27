@@ -11,9 +11,9 @@ public class MarketDto {
     private long latitude;
 
     public MarketDto(Market market) {
-        this.nameMarket = nameMarket;
-        this.longitude = longitude;
-        this.latitude = latitude;
+        this.nameMarket = market.getName();
+        this.longitude = market.getLongitude();
+        this.latitude = market.getLatitude();
     }
 
 
