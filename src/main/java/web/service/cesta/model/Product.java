@@ -1,18 +1,23 @@
 package web.service.cesta.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.sql.Timestamp;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    @ManyToOne
+    private Set<ProductMarket> productMarket;
     private String nameProduct;
-    private long price;
-    private Timestamp dateOfPrice;
+
+    public Product() {
+    }
+
+    public Product(long id, String nameProduct) {
+        this.id = id;
+        this.nameProduct = nameProduct;
+    }
 
 }

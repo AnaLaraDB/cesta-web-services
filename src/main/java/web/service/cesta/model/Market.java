@@ -1,19 +1,21 @@
 package web.service.cesta.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Market {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_market")
     private long id;
+    @OneToMany(mappedBy = "product")
+    private Set<ProductMarket> productMarket;
     private String nameMarket;
     private int cnpj;
     private long longitude;
     private long latitude;
+
 
     public Market() {
     }
