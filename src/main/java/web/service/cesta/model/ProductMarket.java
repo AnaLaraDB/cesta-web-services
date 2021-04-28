@@ -19,7 +19,6 @@ public class ProductMarket { //a market has list of many productMarkets
     Market market;
 
 
-
     public ProductMarket(long id, Product product, Market market) {
         this.id = id;
         this.product = product;

@@ -13,15 +13,14 @@ public class Market {
     private Set<ProductMarket> productMarket;
     private String nameMarket;
     private int cnpj;
-    private long longitude;
-    private long latitude;
+    private double longitude;
+    private double latitude;
 
 
     public Market() {
     }
 
-    public Market(long id, String nameMarket, int cnpj, long longitude, long latitude) {
-        this.id = id;
+    public Market(String nameMarket, int cnpj, long longitude, long latitude) {
         this.nameMarket = nameMarket;
         this.cnpj = cnpj;
         this.longitude = longitude;
@@ -36,14 +35,6 @@ public class Market {
         this.id = id;
     }
 
-    public String getName() {
-        return nameMarket;
-    }
-
-    public void setName(String name) {
-        this.nameMarket = name;
-    }
-
     public int getCnpj() {
         return cnpj;
     }
@@ -52,19 +43,27 @@ public class Market {
         this.cnpj = cnpj;
     }
 
-    public long getLongitude() {
+    public String getNameMarket() {
+        return nameMarket;
+    }
+
+    public void setNameMarket(String nameMarket) {
+        this.nameMarket = nameMarket;
+    }
+
+    public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(long longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
-    public long getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(long latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 }
